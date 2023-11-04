@@ -1,7 +1,17 @@
 
-@media (min-width:360px){
+@media (max-width: 768px) {
   html{
     overflow-x: hidden;
+  }
+  body{
+    overflow-x: hidden;
+    width: 100%;
+  }
+  .group17{
+    position: absolute;
+   
+    
+    left: 0%;
   }
   .login-page {
     width: 100%;
@@ -24,11 +34,13 @@
 }
 }
 html{
-    overflow-x: hidden;
-  }
-body{
+  overflow-x: hidden;
+}
+body{ width: 100%;
     margin: 0;
-  
+    
+    overflow-x: hidden;
+    
 }
 .login-page{
 width: 474px;
@@ -81,4 +93,3 @@ border-width: 0;
   }
   
 
-  
