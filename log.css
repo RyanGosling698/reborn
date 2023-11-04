@@ -1,0 +1,59 @@
+
+
+
+body{
+    margin: 0;
+  
+}
+.login-page{
+width: 474px;
+height: 926px;
+position: relative;
+transform: translateX(-50%);
+left: 50%;
+
+border-radius: 20px;
+background-color: red;
+}
+.character{position: absolute;
+width: 591.33px;
+height: 487.17px;
+top: 103px;
+}
+.sign-up{
+position: absolute;
+top: 711px;
+left: 125px;
+width: 98px;
+height: 42px;
+border-radius: 21px;
+background-color: #4461F2;
+color:#FFF;
+font-family:  "Gilroy",sans-serif;
+font-size: 17px;
+font-weight: 700;
+line-height: 21px;
+letter-spacing: 0.06em;
+text-align: center;
+border-width: 0;
+}
+.register{
+  position: absolute;
+  top: 711px;
+  left: 237px;
+  width: 112px;
+  height: 42px;
+  border-radius: 21px;
+  color: #4461F2;
+  background-color:#FFF;
+  font-family: "Gilroy",sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  border-width: 0;
+  }
+  
+
+  
