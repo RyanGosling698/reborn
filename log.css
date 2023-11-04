@@ -1,5 +1,8 @@
 
 @media (min-width:360px){
+  html{
+    overflow-x: hidden;
+  }
   .login-page {
     width: 100%;
     max-width: 474px; /* Ширина ограничена для мобильных устройств */
@@ -20,7 +23,9 @@
     margin-bottom: 10px; /* Добавление отступов между кнопками */
 }
 }
-
+html{
+    overflow-x: hidden;
+  }
 body{
     margin: 0;
   
