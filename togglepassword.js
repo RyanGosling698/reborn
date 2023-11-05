@@ -1,45 +1,67 @@
-function togglePasswordVisibility() {
-    var passwordInput = document.getElementById("password");
-    var eyeImages = document.querySelectorAll(".eye");
-  
-    eyeImages.forEach(function (eyeImage) {
-      var isVisible = eyeImage.getAttribute("data-visible") === "true";
-      eyeImage.setAttribute("data-visible", !isVisible);
-    });
-  
-    var visibleEye = document.querySelector(".eye[data-visible='true']");
-    var hiddenEye = document.querySelector(".eye[data-visible='false']");
-  
-    if (passwordInput.type === "password") {
-      passwordInput.type = "text";
-      visibleEye.style.display = "none";
-      hiddenEye.style.display = "inline";
-    } else {
-      passwordInput.type = "password";
-      hiddenEye.style.display = "inline";
-      visibleEye.style.display = "none";
-    }
-  }
+document.addEventListener("DOMContentLoaded", function () {
+    const passwordField = document.getElementById("password");
+    const toggleButton = document.getElementById("togglePassword");
+    const eyeIcon = document.getElementById("eyeIcon");
 
-  function togglePasswordVisibility2() {
-    var passwordInput = document.getElementById("password2");
-    var eyeImages = document.querySelectorAll(".eye2");
-  
-    eyeImages.forEach(function (eyeImage) {
-      var isVisible = eyeImage.getAttribute("data-visible") === "true";
-      eyeImage.setAttribute("data-visible", !isVisible);
+    let isPasswordVisible = false;
+
+    toggleButton.addEventListener("click", function () {
+        isPasswordVisible = !isPasswordVisible;
+
+        if (isPasswordVisible) {
+            passwordField.type = "text";
+            eyeIcon.src = "../public/images/eye-password-hide-svgrepo-com.svg";
+            eyeIcon.alt = "Hide Password";
+        } else {
+            passwordField.type = "password";
+            eyeIcon.src = "../public/images/eye-password-show-svgrepo-com.svg";
+            eyeIcon.alt = "Show Password";
+        }
     });
-  
-    var visibleEye = document.querySelector(".eye2[data-visible='true']");
-    var hiddenEye = document.querySelector(".eye2[data-visible='false']");
-  
-    if (passwordInput.type === "password") {
-      passwordInput.type = "text";
-      visibleEye.style.display = "none";
-      hiddenEye.style.display = "inline";
-    } else {
-      passwordInput.type = "password";
-      hiddenEye.style.display = "inline";
-      visibleEye.style.display = "none";
-    }
-  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const passwordField = document.getElementById("password__2");
+    const toggleButton = document.getElementById("togglePassword__2");
+    const eyeIcon = document.getElementById("eyeIcon__2");
+
+    let isPasswordVisible = false;
+
+    toggleButton.addEventListener("click", function () {
+        isPasswordVisible = !isPasswordVisible;
+
+        if (isPasswordVisible) {
+            passwordField.type = "text";
+            eyeIcon.src = "../public/images/eye-password-hide-svgrepo-com.svg";
+            eyeIcon.alt = "Hide Password";
+        } else {
+            passwordField.type = "password";
+            eyeIcon.src = "../public/images/eye-password-show-svgrepo-com.svg";
+            eyeIcon.alt = "Show Password";
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const passwordField = document.getElementById("password__3");
+    const toggleButton = document.getElementById("togglePassword__3");
+    const eyeIcon = document.getElementById("eyeIcon__3");
+
+    let isPasswordVisible = false;
+
+    toggleButton.addEventListener("click", function () {
+        isPasswordVisible = !isPasswordVisible;
+
+        if (isPasswordVisible) {
+            passwordField.type = "text";
+            eyeIcon.src = "../public/images/eye2-password-hide-svgrepo-com.svg";
+            eyeIcon.alt = "Hide Password";
+        } else {
+            passwordField.type = "password";
+            eyeIcon.src = "../public/images/eye2-password-show-svgrepo-com.svg";
+            eyeIcon.alt = "Show Password";
+        }
+    });
+});
+
+
