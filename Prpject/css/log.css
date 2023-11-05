@@ -1,0 +1,114 @@
+
+@media (max-width: 768px) {
+  html{
+    overflow-x: hidden;
+  }
+  body{
+    overflow-x: hidden;
+    width: 100%;
+    
+  }
+  .group17{
+    position: absolute;
+   
+    
+    left: 0%;
+  }
+  .login-page {
+    
+    max-width: 768px; /* Ширина ограничена для мобильных устройств */
+    margin: 0 auto; /* Центрирование по горизонтали */
+    padding: 20px; /* Добавление отступов для контента */
+    border-radius: 20px;
+    background-color: red;
+}
+
+.character {
+    width: 100%; /* Чтобы изображение занимало всю ширину блока */
+    height: auto; /* Автоматическая высота для поддержки адаптивности */
+}
+
+.sign-up, .register {
+    width: 100%; /* Чтобы кнопки занимали всю ширину блока */
+    padding: 10px; /* Уменьшение размера кнопок для мобильных устройств */
+    margin-bottom: 10px; /* Добавление отступов между кнопками */
+}
+}
+html{
+  overflow-x: hidden;
+  
+}
+body{ width: 100%;
+    margin: 0;
+    
+    overflow-x: hidden;
+    
+}
+
+.group{
+  
+  transform: translateX(0%);
+  
+}
+  
+.login-page{
+width: 474px;
+height: 926px;
+position: relative;
+transform: translateX(-50%);
+left: 50%;
+
+border-radius: 20px;
+background-color: #4CAF4F;
+}
+.character{position: absolute;
+width: 591.33px;
+height: 487.17px;
+top: 103px;
+}
+.sign-up{
+position: absolute;
+top: 711px;
+left: 125px;
+width: 98px;
+height: 42px;
+border-radius: 21px;
+background-color: #fff;
+color:#4CAF4F;
+font-family:  "Gilroy",sans-serif;
+font-size: 17px;
+font-weight: 700;
+line-height: 21px;
+letter-spacing: 0.06em;
+text-align: center;
+border-width: 0;
+}
+.register{
+  position: absolute;
+  top: 711px;
+  left: 237px;
+  width: 112px;
+  height: 42px;
+  border-radius: 21px;
+  color: #4461F2;
+  background-color:#FFF;
+  font-family: "Gilroy",sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  border-width: 0px;
+  }
+  .rectangle{
+  position: absolute;
+  max-width: 1079.76px;
+  height: 430.43px;
+  top: -169px;
+  left: 12.18px;
+  border-radius: 20px;
+  transform: rotateX('-42.93 deg');
+  z-index: -1;
+}
+
+  
