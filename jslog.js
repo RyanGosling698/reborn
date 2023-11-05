@@ -21,7 +21,11 @@ document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') {
         document.getElementById("modal-window2").classList.remove("open")
         document.getElementById("modal-window").classList.remove("open")
-        
+        document.getElementById("password").value = "";
+        document.getElementById("password__2").value = "";
+        document.getElementById("password__3").value = "";
+        document.getElementById("email__1").value = "";
+        document.getElementById("email").value = "";
     }
 });
 
@@ -42,37 +46,14 @@ function closeModal() {
 }
 
 
-/* Google button */
-function onSignIn(googleUser) {
-    // Получите информацию о пользователе после входа.
-    var profile = googleUser.getBasicProfile();
-    console.log('ID: ' + profile.getId()); // ID пользователя
-    console.log('Полное имя: ' + profile.getName()); // Полное имя пользователя
-    console.log('Изображение: ' + profile.getImageUrl()); // URL изображения профиля
-    console.log('Email: ' + profile.getEmail()); // Email пользователя
 
-    // Дополнительный код для обработки входа здесь
 
-    // Пример: отправка данных на сервер для аутентификации
-    // fetch('/auth/google', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: JSON.stringify({ id: profile.getId(), email: profile.getEmail() }),
-    // })
-    // .then(response => {
-    //   if (response.status === 200) {
-    //     // Успешная аутентификация
-    //   } else {
-    //     // Ошибка аутентификации
-    //   }
-    // });
-  }
+let burger = document.querySelector('.burger-menu')
+let nav = document.querySelector('.main-nav')
 
-  // Инициализация Google API Client Library после загрузки страницы
-  gapi.load('auth2', function() {
-    gapi.auth2.init({
-      client_id: 'ВАШ_ИДЕНТИФИКАТОР_КЛИЕНТА.apps.googleusercontent.com',
-    });
-  });
+burger.addEventListener('click', function() {
+    burger.classList.toggle('active')
+    nav.classList.toggle('active') 
+    
+})
+ 
